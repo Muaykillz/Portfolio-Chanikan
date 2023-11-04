@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "public",
+    "target": "portfolio-chanikan",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

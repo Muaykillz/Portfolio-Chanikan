@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANIKAN</title>
+    <link rel="shortcut icon" href="./pic/IMG_7776 1.png" type="image/x-icon">
+    <!-- Add Bootstrap 5 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <style>
+        /* Remove the default background color and border from the navbar */
+        .navbar {
+            background: #fff;
+            position: fixed;
+            width: 100%;
+        }
+
+        /* Center the navigation items */
+        .navbar-nav {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Style the navigation items */
+        .nav-item {
+            padding: 0 20px;
+        }
+
+        .custom-header {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            padding: 60px 0;
+            /* Adjust the padding as needed */
+        }
+
+        .custom-header h1 {
+            font-weight: bold;
+            font-size: 500%;
+        }
+
+        .hello-section {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            top: 5%;
+            padding: 10px 0;
+            /* Adjust the padding as needed */
+            text-align: center;
+        }
+
+        .welcome-section {
+            padding: 60px 0;
+            /* Adjust the padding as needed */
+            text-align: center;
+        }
+
+        .welcome-text {
+            font-size: 2rem;
+            /* Adjust the font size as needed */
+            font-weight: bold;
+        }
+
+        .about-section {
+            padding: 60px 0;
+            /* Adjust the padding as needed */
+            text-align: center;
+        }
+
+        .about-content {
+            text-align: left;
+        }
+
+        .about-image {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .about-section {
+            padding: 60px 0;
+            /* Adjust the padding as needed */
+            text-align: center;
+        }
+
+        .about-content {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .about-image {
+            max-width: 100%;
+        }
+
+        .skills-section {
+            padding: 60px 0;
+            /* Adjust the padding as needed */
+            text-align: center;
+            border: solid;
+            align-items: center;
+            display: flex;
+        }
+
+        .values1 {
+            text-align: right;
+        }
+
+        .values-section {
+            padding: 60px 0;
+            /* Adjust the padding as needed */
+            text-align: center;
+            align-items: center;
+            background-color: #b6b6b63d;
+        }
+
+        .big-topic {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .value-topic {
+            font-size: 1.1rem;
+            /* Adjust the font size for the value topics */
+        }
+
+        /* Create space between left and right topics */
+        .left-values {
+            text-align: right;
+        }
+
+        .right-values {
+            text-align: left;
+
+        }
+
+        .col-md {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .education {
+            padding: 70px;
+            text-align: center;
+        }
+
+        .education-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-school {
+            height: 150px;
+        }
+
+        .about-university {
+            height: 130px;
+        }
+
+        .project-section {
+            background-image: url('your-background-image.jpg');
+            /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+            /* Adjust the padding as needed */
+        }
+
+        .project-name {
+            text-align: center;
+            color: black;
+        }
+
+        .project-content {
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Semi-transparent background for better readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+
+        .mini-project-section {
+            padding: 60px 0;
+            /* Adjust the padding as needed */
+            text-align: center;
+        }
+
+        .mini-project-image {
+            max-width: 100%;
+            border-radius: 20px;
+        }
+
+        .mini-project-content {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .reward-section {
+            padding: 60px 0;
+            /* Adjust the padding as needed */
+            text-align: center;
+        }
+
+        .divider {
+            margin-top: 20px;
+            border-top: 2px solid #333;
+            /* Adjust the color and style as needed */
+        }
+
+        .reward-section {
+            padding: 60px 0;
+            /* Adjust the padding as needed */
+            text-align: center;
+        }
+
+        .reward-card {
+            background-color: rgba(216, 216, 216, 0.425);
+            background-size: cover;
+            background-position: center;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+
+        }
+
+        .quote {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 200px;
+            font-weight: bold;
+            width: 100%;
+
+        }
+
+        .footer-section {
+            background-color: #333;
+            /* Background color for the footer */
+            color: white;
+            padding: 20px 0;
+            /* Adjust the padding as needed */
+            text-align: center;
+        }
+
+        .contact-link {
+            color: white;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg" >
+            <div class="container">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home-section">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#personal-val">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project-section">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" id="home-section">
+            <header class="custom-header">
+                <h1>CHANIKAN<br>KATTI</h1>
+            </header>
+        </div>
+        <section class="hello-section">
+            <span>Hello, my name is Chanikan Katti. You can called me “Ning”. </span>
+        </section>
+
+        <div class="container">
+            <section class="about-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="pic/S__2129923-removebg-preview 1.svg" alt="Image" class="about-image">
+                    </div>
+                    <div class="col-md-5 about-content">
+                        <h2>Personality</h2>
+                        <div class="divider"></div>
+                        <p>
+                            When I set my mind to something, I wholeheartedly commit to bridging the gap between my
+                            vision and reality. Even when confronted with setbacks, I embrace them as opportunities for
+                            growth, constantly generating innovative ideas, and remaining steadfast in my journey
+                            towards self-improvement. I am unwavering in my confidence and resolute in my ability to
+                            conquer any obstacles that stand in my way.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- personal -->
+        <section class="values-section" id="personal-val">
+            <div class="row">
+                <div class="col-md-4 left-values">
+                    <div class="value-topic">Responsibility</div>
+                    <div class="value-topic">Punctuality</div>
+                    <div class="value-topic">Innovation</div>
+                    <div class="value-topic">Cooperation</div>
+                    <div class="value-topic">Leadership</div>
+                </div>
+                <div class="col-md-4 big-topic">
+                    <h2>Personal Values & Skills</h2>
+                </div>
+                <div class="col-md-4 right-values">
+                    <div class="value-topic">Dedication</div>
+                    <div class="value-topic">Flexibility</div>
+                    <div class="value-topic">Plausibility</div>
+                    <div class="value-topic">Humility</div>
+                    <div class="value-topic">Optimism</div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="education">
+                <h2>Educations</h2>
+            </div>
+        </div>
+        <div class="container">
+            <section class="education-section">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="school">
+                            <img src="pic/PCSHS_Chiang_Rai_(th).svg.png" alt="School Image" class="about-school">
+                            <h5>Princess Chulabhorn Science High School Chiang Rai (PCSHSCR)</h5>
+                            <p>2017-2022</p>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="university">
+                            <img src="pic/Seal_of_King_Mongkut's_University_of_Technology_Thonburi.svg.png"
+                                alt="University Image" class="about-university">
+                            <h5>King Mongkut's University of Technology Thonburi (KMUTT)</h5>
+                            <p>2023-Presented</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- projects -->
+        <div class="container" id="project-section">
+            <section class="mini-project-section">
+                <div class="row">
+
+                    <div class="col-md-6 mini-project-content">
+                        <h1>Project</h1>
+                        <h2>Psychological Advice System from Analysis of Emotional Tendency Using Thai and NLP </h2>
+                        <div class="divider"></div>
+                        <p>
+                            We combined the writing therapy theory with creating an accessible web application to create
+                            a safe area and be able to give basic advices and comforting words for 5 emotions to users
+                            that called SPA JAI.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="pic/image 1.svg" alt="Project Image" class="mini-project-image">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="project">
+                <h2 class="project-name">Awards from this project</h2>
+            </section>
+        </div>
+        <div class="container">
+            <section class="reward-section">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="reward-card">
+                            <div class="reward-overlay"></div>
+                            <div class="reward-name">Thailand Representative in The 3rd Thailand-Japan
+                                Student ICT Fair 2022</div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="reward-card">
+                            <div class="reward-overlay"></div>
+                            <div class="reward-name">BRONZE medal in The 9th International Young Inventors Award</div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="reward-card">
+                            <div class="reward-overlay"></div>
+                            <div class="reward-name">BRONZE medal in The 23rd International Elementz Fair</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="reward-card">
+                            <div class="reward-overlay"></div>
+                            <div class="reward-name">GOLD medal in The 2 PCSHS Science Symposium 2022</div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="reward-card">
+                            <div class="reward-overlay"></div>
+                            <div class="reward-name">Selected to represent in the Northern final round in the field of
+                                Health and Medicine courses in STEAM Co-Creation Project 2022</div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="reward-card">
+                            <div class="reward-overlay"></div>
+                            <div class="reward-name">SILVER medal in Provincial National Science Week 2022</div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="quote">
+                <span>"My goal is simple: to develop advanced technology that improves people's lives. I am passionate
+                    about learning and using technology effectively to create valuable innovations."</span>
+            </section>
+        </div>
+
+        <footer class="footer-section" id="contact-me">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Contact me: <a class="contact-link">chanikankatti47@gmail.com</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
+
+
+<!-- Add Bootstrap 5 JavaScript and Popper.js via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"></script>
+
+</body>
+
+</html>
